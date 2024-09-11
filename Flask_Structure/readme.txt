@@ -23,3 +23,8 @@
 # templates - this is where you store html templates i.e. index.html, home.html
 # requirements.txt - This is where you store your packages dependencies, you can use pip
 # your appenv - your virtual environment for development
+---------------------------------------------------------------------------------------------
+Default Port Number - 5000
+Default Host Number - '127.0.0.1'
+Default Debugging - False
+---------------------------------------------------------------------------------------------
