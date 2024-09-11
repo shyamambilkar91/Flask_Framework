@@ -1,4 +1,4 @@
-# Flask Application Structure
+Flask Application Structure
 --------------------------------------------------------------------------------------------
 /your app
     /app.py
