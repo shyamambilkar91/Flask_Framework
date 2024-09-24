@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    <a href="{{ url_for('show_all'}}"> Flask SQLAlchemy Example</a>
+</h1>
+{%- for category, message in get_flashed_messages(with_category = true) %}
+<div class="alert alert-danger"> {{ message }}</div>
+{%- endfor %}
+
+<form action="{{ request.path}}" method="post">
+  <label for="name">Name</label><br>
+  <input type="text" name="name" placeholder="Enter a Student Name"/><br>
+  <label for="email">City</label><br>
+  <input type="text" name="city" placeholder="Enter a City Name"/><br>
+  <label for="addr">Address</label><br>
+  <textarea name="addr" placeholder="Enter Full Address"></textarea><br>
+  <label for="pin">Pincode</label><br>
+  <input type="text" name="pin" placeholder="Enter a Pin Code"/><br><br>
+
+  <input type="submit" value="Submit"/>
+
+
+</form>
+</body>
+</html>
